@@ -133,6 +133,11 @@
     <ClCompile Include="caitui0-1QHD.cpp" />
     <ClCompile Include="caituiThamLam.cpp" />
     <ClCompile Include="cau 2.cpp" />
+    <ClCompile Include="danhsachke.cpp" />
+    <ClCompile Include="dayconcotongbangSqhd.cpp" />
+    <ClCompile Include="ltdt.cpp" />
+    <ClCompile Include="matranke.cpp" />
+    <ClCompile Include="noiDayThamlam.cpp" />
     <ClCompile Include="tenTromQHD.cpp" />
     <ClCompile Include="test3.cpp" />
     <ClCompile Include="daycondainhatQhd.cpp" />
@@ -149,9 +154,13 @@
     <ClCompile Include="ktracacptusumquaylui.cpp" />
     <ClCompile Include="bailam2.cpp" />
     <ClCompile Include="conhauquaylui.cpp" />
-    <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />
+    <ClCompile Include="thangmayThamLLam.cpp" />
     <ClCompile Include="tuixachTham_Lam.cpp" />
+    <ClCompile Include="xaucondoixungdainhatQHD.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="testinput.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
