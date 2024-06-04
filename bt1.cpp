@@ -1,95 +1,38 @@
-//#include<iostream>
+﻿//#include <iostream>
+//#include <algorithm>
+//
 //using namespace std;
 //
-////de quy 
-//int UCLN(int a, int b) {
-//	a = abs(a);
-//	b = abs(b);
-//	if (b == 0) {
-//		return a;
-//	}
-//	else {
-//		return UCLN(b, a % b);
-//	}
-//}
+//int minCostToGetAllCoins(int coins[], int n, int k) {
+//    // Sap xep danh sach cac dong xu theo thu tu tang dan
+//    sort(coins, coins + n);
 //
-////ko de quy 
-//int UCLN2(int a, int b)
-//{
-//	while (a != b)
-//	{
-//		if (a > b)
-//			a = a - b;
-//		else
-//			b = b - a;
-//	}
+//    // Khoi tao bien dem so tien can thiet
+//    int totalCost = 0;
 //
-//	return a; // or return b; a = b
-//}
+//    int i = 0, j = n - 1;
+//    // Lap lai qua trinh mua dong xu
+//    while (i <= j) {
+//        totalCost += coins[i];
+//        i++;
+//        j -= k;
+//    }
 //
-//int UCLN3(int a, int b, int c) {
-//	return UCLN(a, UCLN(b,c));
-//}
-//
-//int BCNN(int a, int b) {
-//	return abs(a * b) / UCLN(a, b);
-//}
-//
-//int BCNN_mang(int a[], int n) {
-//	if (n == 1) {
-//		return a[n];
-//	}
-//	return BCNN(a[n - 1], BCNN_mang(a, n - 1));
+//    return totalCost;
 //}
 //
 //int main() {
-//	int n, a, b, choice;
-//	do {
-//		cout << "1. UCLN 2 so nguyen" << endl;
-//		cout << "2. BCNN 2 so nguyen to" << endl;
-//		cout << "3. nhap mang n so nguyen" << endl;
-//		cin >> choice;
-//		switch (choice) {
-//		case 1: {
-//			cout << "nhap a: ";
-//			cin >> a;
-//			cout << "nhap b: ";
-//			cin >> b;
-//			if (a < 0 || b < 0) {
-//				cout << "vui long nhap lai" << endl;
-//			}
-//			else {
-//				cout << "UCLN cua 2 so " << a << " va " << b << ": " << UCLN(a, b) << endl;
-//			}
-//			break;
-//		}
-//		case 2: {
-//			cout << "nhap a: ";
-//			cin >> a;
-//			cout << "nhap b: ";
-//			cin >> b;
-//			if (a < 0 || b < 0) {
-//				cout << "vui long nhap lai" << endl;
-//			}
-//			else {
-//				cout << "BCNN cua 2 so " << a << " va " << b << ": " << BCNN(a, b) << endl;
-//			}
-//			break;
-//		}
-//		case 3: {
-//			cout << "nhap n: ";
-//			cin >> n;
-//			int arr[n];
-//			for (int i = 0; i < n; i++) {
-//				cout << "nhap so thu " << i << ": ";
-//				cin >> arr[i];
-//			}
-//		}
-//		default: {
-//			cout << " khong hop le!" << endl;
-//		}
-//		}
-//	} while (choice != 0);
+//    // Vi du dau vao va kiem tra ket qua
+//    int coins1[] = { 100, 20, 50, 10, 2, 5 };
+//    int n1 = sizeof(coins1) / sizeof(coins1[0]);
+//    cout << coins1[n1-1] << endl;
+//    int k1 = 3;
+//    cout << "Ket qua cho vi du 1: " << minCostToGetAllCoins(coins1, n1, k1) << endl;  // Output: 7
 //
-//	return 0;
+//    int coins2[] = { 1, 2, 5, 10, 20, 50 };
+//    int n2 = sizeof(coins2) / sizeof(coins2[0]);
+//    int k2 = 3;
+//    cout << "Ket qua cho vi du 2: " << minCostToGetAllCoins(coins2, n2, k2) << endl;  // Output: 3
+//
+//    return 0;
 //}

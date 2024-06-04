@@ -136,6 +136,7 @@
     <ClCompile Include="danhsachke.cpp" />
     <ClCompile Include="dayconcotongbangSqhd.cpp" />
     <ClCompile Include="ltdt.cpp" />
+    <ClCompile Include="luckyLuke.cpp" />
     <ClCompile Include="matranke.cpp" />
     <ClCompile Include="noiDayThamlam.cpp" />
     <ClCompile Include="tenTromQHD.cpp" />

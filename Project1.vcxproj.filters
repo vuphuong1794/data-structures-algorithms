@@ -108,6 +108,9 @@
     <ClCompile Include="xaucondoixungdainhatQHD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="luckyLuke.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="testinput.txt">
